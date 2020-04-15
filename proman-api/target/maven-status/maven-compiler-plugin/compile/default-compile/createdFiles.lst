@@ -11,4 +11,5 @@ com\upgrad\proman\api\controller\SignupController.class
 io\swagger\api\ApiException.class
 com\upgrad\proman\api\model\UserStatusType.class
 io\swagger\configuration\SwaggerDocumentationConfig.class
+com\upgrad\proman\api\config\SwaggerConfiguration.class
 com\upgrad\proman\api\model\SignupUserRequest.class
