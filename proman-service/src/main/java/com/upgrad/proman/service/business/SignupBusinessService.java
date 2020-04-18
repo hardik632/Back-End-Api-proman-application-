@@ -11,12 +11,12 @@ import org.springframework.transaction.annotation.Transactional;
 public class SignupBusinessService {
 
     @Autowired
-    private UserDao userDao;
+    private UserAdminBusinessService userAdminBusinessService;
 
     @Transactional(propagation = Propagation.REQUIRED)
     public UserEntity signup(UserEntity userEntity)
     {
-        return userDao.createUser(userEntity);
+        return userAdminBusinessService.createUser(userEntity);
     }
 }
 
