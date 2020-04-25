@@ -83,7 +83,7 @@ public class RoleEntity implements Serializable{
         this.uuid = uuid;
     }
 
-    public String getName() {
+   public String getName() {
         return name;
     }
 
@@ -152,17 +152,17 @@ public class RoleEntity implements Serializable{
     }*/
 
     @Override
-    public boolean equals(Object obj) {
-        return new EqualsBuilder().append(this, obj).isEquals();
-    }
+        public boolean equals(Object obj) {
+            return new EqualsBuilder().append(this, obj).isEquals();
+        }
 
-    @Override
-    public int hashCode() {
-        return new HashCodeBuilder().append(this).hashCode();
-    }
+        @Override
+        public int hashCode() {
+            return new HashCodeBuilder().append(this).hashCode();
+        }
 
-    @Override
-    public String toString() {
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
-    }
+        @Override
+        public String toString() {
+            return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
+        }
 }
